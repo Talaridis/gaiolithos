@@ -10,14 +10,20 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ mix('js/app.js') }}" defer></script>
     <script src="{{ asset('js/app-theme.js') }}" defer></script>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app-theme.css') }}" rel="stylesheet">
+
+    @yield('style')
+
 </head>
+
+
 <body class="bg-gray-100 h-screen antialiased leading-none font-sans">
+
     <div id="app">
         <header class="bg-blue-900 py-6">
             <div class="container mx-auto flex justify-between items-center px-6">
@@ -39,6 +45,12 @@
                            class="no-underline hover:underline"
                            onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
+
+                        <a href="{{route("dashboard")}}" class="no-underline  hover:underline">
+                            dashboard
+                        </a>
+
+
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
                             {{ csrf_field() }}
                         </form>
@@ -49,5 +61,7 @@
 
         @yield('content')
     </div>
+
+    @yield('script')
 </body>
 </html>

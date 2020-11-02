@@ -18,7 +18,11 @@ mix
     require('tailwindcss'),
     require('postcss-nested'),
     require('autoprefixer'),
-  ]);
+  ])
+    .browserSync("http://127.0.0.1:8000/")
+    .sourceMaps()
+    .disableSuccessNotifications()
+    .version();
 
 if (mix.inProduction()) {
   mix

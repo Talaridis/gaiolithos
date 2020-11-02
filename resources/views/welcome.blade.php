@@ -45,6 +45,7 @@
                     <li>
                         <a href="https://tailwindcss.com" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase" title="Tailwind Css">Tailwind CSS</a>
                     </li>
+
                 </ul>
             </div>
         </div>
