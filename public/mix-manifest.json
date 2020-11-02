@@ -1,6 +1,7 @@
 {
     "/js/app.js": "/js/app.js?id=e72556d1cebceae78162",
     "/css/app.css": "/css/app.css?id=68952e90ecfa67a2ff21",
-    "/js/dashboard/user/user.js": "/js/dashboard/user/user.js?id=4c696c010e474e0fa8dd",
+    "/js/dashboard/main/main.js": "/js/dashboard/main/main.js?id=5115155ad7b9530e8d48",
+    "/js/dashboard/user/user.js": "/js/dashboard/user/user.js?id=a3d087841910799ee37b",
     "/js/jquery/jquery.min.js": "/js/jquery/jquery.min.js?id=dc5e7f18c8d36ac1d3d4"
 }

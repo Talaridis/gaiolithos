@@ -27,7 +27,7 @@
                         >
                     </div>
                     @error("first_name")
-                     <div class="pristine-error text-theme-6 mt-2">{{$message}}</div>
+                    <div class="pristine-error text-theme-6 mt-2">{{$message}}</div>
                     @enderror
 
                     <div class="mt-3 @error('last_name') has-error @enderror">
@@ -105,40 +105,45 @@
                             name="role"
                             form="form-user-create"
                         >
-                            <option value="1">Leonardo DiCaprio</option>
-                            <option value="2">Johnny Deep</option>
-                            <option value="3">Robert Downey, Jr</option>
-                            <option value="4">Samuel L. Jackson</option>
-                            <option value="5">Morgan Freeman</option>
+                            @foreach($roles as  $role)
+                                <option {{$role->id==2?"selected":""}} value="{{$role->id}}">{{$role->name}}</option>
+                            @endforeach
                         </select>
                     </div>
 
                     <div>
                         <div class="mt-3 @error('password') has-error @enderror">
                             <label for="user-password">Κωδικός</label>
-                            <input type="password"
+                            <input autocomplete="off"
+                                   type="password"
                                    id="user-password"
-                                   class="input w-full border mt-2"
+                                   class="input w-full border mt-2 js-strong-password"
                                    name="password"
                                    placeholder="Εισάγετε Κωδικό.."
                                    form="form-user-create"
                             >
                         </div>
-                        <div class="w-full grid grid-cols-12 gap-4 h-1 mt-3">
-                            <div class="col-span-3 h-full rounded bg-theme-9"></div>
-                            <div class="col-span-3 h-full rounded bg-theme-9"></div>
-                            <div class="col-span-3 h-full rounded bg-theme-9"></div>
-                            <div class="col-span-3 h-full rounded bg-gray-200 dark:bg-dark-1"></div>
+                        <div class="w-full grid grid-cols-12 gap-4 h-1 mt-3 ">
+                            <div class="col-span-3 h-full rounded bg-theme-6 hidden"></div>
+                            <div class="col-span-3 h-full rounded bg-theme-11 hidden"></div>
+                            <div class="col-span-3 h-full rounded bg-theme-12 hidden"></div>
+                            <div class="col-span-3 h-full rounded bg-theme-9 hidden"></div>
                         </div>
-                        <div class="text-theme-9 mt-2">Strong password</div>
+                        <div class="text-theme-9 mt-2 js-message-strong-password"></div>
                         @error("password")
                         <div class="pristine-error text-theme-6 mt-2">{{$message}}</div>
                         @enderror
 
                         <div class="mt-3">
-                            <label>Επανάληψη κωδικού</label>
-                            <input type="password" class="input w-full border mt-2"
-                                   placeholder="Εισάγετε επανάληψη κωδικού..">
+                            <label for="password_confirmation">Επανάληψη κωδικού</label>
+                            <input type="password"
+                                   id="password_confirmation"
+                                   name="password_confirmation"
+                                   class="input w-full border mt-2"
+                                   placeholder="Εισάγετε επανάληψη κωδικού.."
+                                   form="form-user-create"
+                            >
+
                         </div>
 
                     </div>
@@ -154,11 +159,9 @@
                 <!-- BEGIN: Form Layout -->
                 <div class="intro-y box p-5 relative">
 
-
                     <button id="submit-user-create" class="flex justify-center btn-custom-white mb-4">
                         <i data-feather="hard-drive" class="w-4 h-4 mr-2"></i>save
                     </button>
-
 
                     <div
                         class=" flex justify-center items-center p-5 border-b border-t border-gray-500 dark:border-dark-5"
@@ -189,7 +192,7 @@
                         </div>
                         <div class="w-40 mx-auto cursor-pointer relative mt-5">
                             <button type="button" class="button w-full bg-theme-1 text-white">Change Photo</button>
-                            <input type="file" class="w-full h-full top-0 left-0 absolute opacity-0">
+                            <input type="file" name="avatar" class="w-full h-full top-0 left-0 absolute opacity-0">
                         </div>
                     </div>
 

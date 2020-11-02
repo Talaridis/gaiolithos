@@ -16,6 +16,7 @@ mix.copy('node_modules/jquery/dist/jquery.min.js', 'public/js/jquery');
 mix
   .js('resources/js/app.js', 'public/js')
   .js('resources/js/dashboard/user/user.js', 'public/js/dashboard/user')
+  .js('resources/js/dashboard/main.js', 'public/js/dashboard/main')
 
   .postCss('resources/css/app.css', 'public/css', [
     require('postcss-import'),
