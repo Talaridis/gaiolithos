@@ -24,5 +24,6 @@ Auth::routes();
 
 Route::get("/dashboard",[DashboardController::class,"index"])->name("dashboard");
 Route::get("/user",[UserController::class,"index"])->name("user.user");
+Route::post("/user/store",[UserController::class,"store"])->name("user.store");
 
 

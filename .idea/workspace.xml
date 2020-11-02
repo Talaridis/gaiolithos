@@ -20,18 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26361a4f-eca6-4e8b-8d26-103d761168f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/user/user.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/dashboard/user/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/gr/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/gr/pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/gr/passwords.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/gr/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/user/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/user/user.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
@@ -59,7 +66,6 @@
     <include_path>
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
@@ -88,7 +94,6 @@
       <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
       <path value="$PROJECT_DIR$/vendor/league/flysystem" />
       <path value="$PROJECT_DIR$/vendor/brick/math" />
-      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/vendor/opis/closure" />
@@ -109,15 +114,9 @@
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
       <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
       <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
       <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
       <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
       <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
       <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
@@ -164,6 +163,14 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
       <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
       <path value="$PROJECT_DIR$/vendor/laravel-frontend-presets/tailwindcss" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
     </include_path>
   </component>
   <component name="ProjectId" id="1jfDzwJQb8pUBLXIfANm2dgXAjV" />
@@ -174,25 +181,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\gaiolithos\resources\views\layouts" />
-      <recent name="C:\laragon\www\gaiolithos\resources" />
-      <recent name="C:\laragon\www\gaiolithos\public\css" />
-      <recent name="C:\laragon\www\gaiolithos\public\js" />
-      <recent name="C:\laragon\www\gaiolithos\resources\sass" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\gaiolithos\resources\lang" />
       <recent name="C:\laragon\www\gaiolithos\public\images" />
       <recent name="C:\laragon\www\gaiolithos\public" />
       <recent name="C:\laragon\www\gaiolithos\public\js" />
       <recent name="C:\laragon\www\gaiolithos\public\css" />
-      <recent name="C:\laragon\www\gaiolithos\resources\themes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\gaiolithos\resources\js\dashboard\user" />
+      <recent name="C:\laragon\www\gaiolithos\resources\views\layouts" />
+      <recent name="C:\laragon\www\gaiolithos\resources" />
+      <recent name="C:\laragon\www\gaiolithos\public\css" />
+      <recent name="C:\laragon\www\gaiolithos\public\js" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -200,6 +207,7 @@
       <command value="php artisan make:migration create_products_table" />
       <command value="php artisan make:controller DashboardController" />
       <command value="php artisan make:controller UserController" />
+      <command value="php artisan make:request UserRequestCreate" />
     </option>
   </component>
   <component name="RunManager">
@@ -221,6 +229,8 @@
       <workItem from="1604228121148" duration="7188000" />
       <workItem from="1604264470373" duration="9562000" />
       <workItem from="1604275383237" duration="6842000" />
+      <workItem from="1604320096829" duration="8000" />
+      <workItem from="1604320110872" duration="11165000" />
     </task>
     <servers />
   </component>
@@ -237,6 +247,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604192848096">
@@ -247,26 +258,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604274726409" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604264466683">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604320103184">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604264466683" />
-    <state width="1921" height="305" key="GridCell.Tab.0.bottom" timestamp="1604280257046">
+    <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604320103184" />
+    <state width="1921" height="305" key="GridCell.Tab.0.bottom" timestamp="1604330118454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="305" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604280257046" />
-    <state width="1921" height="305" key="GridCell.Tab.0.center" timestamp="1604280257046">
+    <state width="1921" height="305" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604330118454" />
+    <state width="1921" height="305" key="GridCell.Tab.0.center" timestamp="1604330118454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="305" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604280257046" />
-    <state width="1921" height="305" key="GridCell.Tab.0.left" timestamp="1604280257046">
+    <state width="1921" height="305" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604330118454" />
+    <state width="1921" height="305" key="GridCell.Tab.0.left" timestamp="1604330118454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="305" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604280257046" />
-    <state width="1921" height="305" key="GridCell.Tab.0.right" timestamp="1604280257046">
+    <state width="1921" height="305" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604330118454" />
+    <state width="1921" height="305" key="GridCell.Tab.0.right" timestamp="1604330118454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="305" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604280257046" />
+    <state width="1921" height="305" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604330118454" />
     <state x="894" y="203" key="SettingsEditor" timestamp="1604280657770">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -287,13 +298,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="601" y="246" width="700" height="530" key="recent.locations.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604278880145" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1604280253483">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1604329888811">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604280253483" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604280455523">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604329888811" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604330409971">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604280455523" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604330409971" />
   </component>
 </project>

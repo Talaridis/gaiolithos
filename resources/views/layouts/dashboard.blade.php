@@ -13,6 +13,8 @@
     <script src="{{ mix('js/app.js') }}" defer></script>
     <script src="{{ asset('js/app-theme.js') }}" defer></script>
 
+
+
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app-theme.css') }}" rel="stylesheet">
@@ -188,6 +190,7 @@
         </div>
         <!-- END: Content -->
     </div>
+    <script src="{{ asset('js/jquery/jquery.min.js') }}"></script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 {{--    <script src="https://maps.googleapis.com/maps/api/js?key=["your-google-map-api"]&libraries=places"></script>--}}
     @yield('script')
